@@ -3,7 +3,10 @@ title: "Hello World"
 date: 2022-07-10T13:45:29+02:00
 tags: ["foo", "bar"]
 draft: false
+featured_image: "/pic/640x360.png"
 ---
+
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor 
