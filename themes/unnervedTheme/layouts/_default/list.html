@@ -1,11 +1,11 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
 {{ range .Pages.ByPublishDate.Reverse }}
-<p>
-    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    {{ partial "metadata.html" . }}
-    <p class="summary" href="{{ .RelPermalink }}">
-        {{ .Summary }}
-    </p>
-{{ end }}
+<div class="card mb-3">
+    <img src="http://via.placeholder.com/640x360" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ partial "metadata.html" . }}</h6>
+    </div>
+  </div>
+{{ end }} 
 {{ end }}
