@@ -1,5 +1,6 @@
-body {
+logo {
     background-color: rgb(34, 37, 41);
+    min-height: 100%;;
 }
 
 .btn {
