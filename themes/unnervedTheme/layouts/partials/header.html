@@ -1,0 +1,36 @@
+<img src="img/logo.png" class="img-fluid">
+
+        <div class="btn-group btn-group-lg fixed-bottom" role="group" aria-label="Basic example">
+            {{ range .Site.Menus.main }}
+            <button type="button" class="btn btn-dark">
+                <a class="nav-link" href="{{ .URL }}">
+                    {{ if .Pre }}
+                    {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+                    {{ $icon }}
+                    {{ end }}
+                    {{ $text := print .Name | safeHTML }}
+                    {{ $text }}
+                </a>
+            </button>
+            {{ end }}
+        </div>
+
+<!-- <nav class="col-xs-12 fixed-bottom navbar-dark bg-dark">
+    <div class="container-fluid"> 
+      <div class="col-xs-12" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ .URL }}">
+                        {{ $text := print .Name | safeHTML }}
+                        {{ $text }}
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+      </div>
+    </div>
+</nav> -->
+
+
+  
