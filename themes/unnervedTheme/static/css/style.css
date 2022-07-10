@@ -1,13 +1,19 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
 body{
     background-color: #e6e6e6;
-    padding-top: 90px; 
-    padding-bottom: 70px;
+    font-family: "San Francisco", sans-serif;
 }
 
-img.logo {
-    background-color: #222529;
+nav {
+    margin-bottom: 20px;
+}
+.navbar-dark {
     border-bottom: 3px solid #7F00FF;
-    padding: 0 3px 4px 3px;
 }
 
 .btn {
