@@ -1,15 +1,20 @@
 body{
     background-color: #e6e6e6;
+    padding-top: 90px; 
+    padding-bottom: 70px;
 }
 
 img.logo {
     background-color: #222529;
     border-bottom: 3px solid #7F00FF;
     padding: 0 3px 4px 3px;
-    margin-bottom: 10px;;
 }
 
 .btn {
     border-radius: 0;
+}
+
+.btn-menu {
+    border-top: 5px solid #7F00FF;
 }
 

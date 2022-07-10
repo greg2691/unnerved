@@ -1,19 +1,19 @@
-<logo><img src="/img/logo.png" class="img-fluid logo"></logo>
+<logo><img src="/img/logo.png" class="img-fluid logo fixed-top"></logo>
 
-        <div class="btn-group btn-group-lg fixed-bottom" role="group" aria-label="Basic example">
-            {{ range .Site.Menus.main }}
-            <button type="button" class="btn btn-dark">
-                <a class="nav-link" href="{{ .URL }}">
+<div class="btn-group btn-group-lg fixed-bottom btn-menu" role="group" aria-label="Basic example">
+    {{ range .Site.Menus.main }}
+        <button type="button" class="btn btn-dark">
+            <a class="nav-link" href="{{ .URL }}">
                     {{ if .Pre }}
                     {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
                     {{ $icon }}
                     {{ end }}
                     {{ $text := print .Name | safeHTML }}
                     {{ $text }}
-                </a>
-            </button>
-            {{ end }}
-        </div>
+            </a>
+        </button>
+    {{ end }}
+</div>
 
 
   
