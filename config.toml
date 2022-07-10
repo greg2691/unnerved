@@ -1,8 +1,8 @@
-baseURL = 'http://example.org/'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Unnerved Reality'
 
-theme = "UnnervedTheme"
+theme = "unnervedTheme"
 
 [menu]
   [[menu.main]]
