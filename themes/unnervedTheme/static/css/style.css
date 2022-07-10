@@ -1,8 +1,11 @@
-logo {
+img.logo {
     background-color: rgb(34, 37, 41);
-    min-height: 100%;;
+    border-bottom: 3px solid #7F00FF;
+    padding: 0 3px 4px 3px;
+    margin-bottom: 10px;;
 }
 
 .btn {
     border-radius: 0;
 }
+
