@@ -1,5 +1,49 @@
 {{ define "main" }}
-{{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{end}}
+<div class="h-100 p-5 text-white bg-dark rounded-3">
+  <figure>
+    <blockquote class="blockquote">
+      Do not let the memories of your past limit the potential of your future. There are no limits to what you can
+      achieve on your journey through life, except in your mind.
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Roy T. Bennett, <cite title="Source Title">The Light in the Heart</cite>
+    </figcaption>
+  </figure>
+</div>
+
+<hr>
+
+
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3>Post</h3>
+          {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3>Post</h3>
+          {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3>Post</h3>
+          {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
 {{ end }}

@@ -43,6 +43,10 @@ nav {
     border-bottom: 3px solid #7F00FF;
 }
 
+nav.navbar {
+    
+}
+
 img.single-img {
     border-radius: 10px;
 }
