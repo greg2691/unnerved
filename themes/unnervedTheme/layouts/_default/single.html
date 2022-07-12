@@ -1,8 +1,12 @@
 {{ define "main" }}
-{{ partial "metadata.html" . }}
-<h1>{{ .Title }}</h1>
     {{if isset .Params "featured_image" }}
-        <img src="{{ index .Params "featured_image" }}" class="card-img-top"></a>
+        <img src="{{ index .Params "featured_image" }}" class="img-fluid single-img"></a>
     {{ end }}
+    <br><br>
+    <h1 class="text-center">{{ .Title }}</h1>
+    <h3 class="text-center"><small class="text-muted">{{ .Page.Params.subtitle }}</small></h3>
+    <hr>
+    <p class="meta text-center">{{ partial "metadata.html" . }}</p>
+    <hr>
 {{ .Content }}
 {{ end }}

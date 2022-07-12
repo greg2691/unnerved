@@ -1,3 +1,5 @@
+/* TYPOGRAPHY */
+
 @font-face {
     font-family: "San Francisco";
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
@@ -7,8 +9,7 @@
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
-body{
-    background-color: #e6e6e6;
+body {
     font-family: "San Francisco", sans-serif;
     font-weight: 500;
 }
@@ -19,6 +20,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+p.meta {
+    color: #6e6e73;
+    font-weight: 600;
+}
+
+a.post-title {
+    text-decoration: none;
+    color: #1d1d1f;
+}
+
+/* LAYOUT */
+
+body{
+    background-color: #e6e6e6;
+}
+
 nav {
     margin-bottom: 20px;
 }
@@ -26,8 +43,9 @@ nav {
     border-bottom: 3px solid #7F00FF;
 }
 
-a.post-title {
-    text-decoration: none;
-    color: #1d1d1f;
+img.single-img {
+    border-radius: 10px;
 }
+
+
 
